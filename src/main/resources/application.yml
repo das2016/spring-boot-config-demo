@@ -1,0 +1,21 @@
+app:
+  name: my app
+  sayhello: say hello to ${app.name}
+  list: one,two,three
+
+dbvalues: "{ host: 'localhost', username: 'name', password: 'password'}"
+
+db:
+  connection: { host: 'localhost',username: 'name',password: 'password'}
+  port: 80
+  host: localhost
+
+management.endpoints.web.exposure.include: "*"
+#spring:
+#  profiles:
+#    active:
+#    - test
+spring.could.config.uri: http://localhost:8888
+spring:
+  application:
+    name: spring-boot-config

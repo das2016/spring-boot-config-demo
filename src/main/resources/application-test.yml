@@ -1,0 +1,13 @@
+app:
+  name: my test app
+  sayhello: say hello to ${app.name}
+  list: one,two,three
+
+dbvalues: "{ host: 'localhost-test', username: 'name', password: 'password'}"
+
+db:
+  connection: { host: 'localhost-test',username: 'name',password: 'password'}
+  port: 80
+  host: localhost
+
+management.endpoints.web.exposure.include: "*"
